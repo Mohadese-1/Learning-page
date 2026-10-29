@@ -1,0 +1,34 @@
+{
+  "folders": [
+	{
+		"path": "../../new part of VSC"
+	},
+	{
+		"path": "../../portofolio7"
+	},
+	{
+		"path": "../../my-page"
+	},
+	{
+		"path": "../../bootstrap"
+	},
+	{
+		"path": "../../js.learning-jonas"
+	},
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../a-portofilo"
+	},
+	{
+		"path": "../../boot2"
+	},
+	{
+		"path": "../../bootstrap - Copy"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "TailwindCSS"
+  }
+}

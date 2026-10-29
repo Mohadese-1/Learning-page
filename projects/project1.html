@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind CSS card-1</title>
+    <link rel="stylesheet" href="../assets/CSS/main.css" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="stylesheet" href="../src/input.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="nav"
+      class="bg-neutral-primary  w-full z-20 top-0 start-0 border-b border-default fixed"
+    >
+      <div
+        class="flex flex-wrap   sm:justify-center items-end mx-auto max-w-screen-xl p-5"
+      >
+        <a
+          href="#"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+           
+          <img
+            src="../assets/img/product-brand-building-corporate-identity-design-studio-designers-flat-characters-teamwork-cooperation-collaboration-company-name_335657-2627.avif"
+            class="h-9 w-9 ms-auto"
+            alt="Flowbite Logo"
+          />
+          <!-- <span
+            class="self-center text-xl font-semibold whitespace-nowrap text-heading"
+            >Mohadese</span
+          > -->
+        </a> 
+        <div class=" ml-2 flex ms-auto md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button type="button" class=" flex text-sm bg-neutral-primary rounded-full md:me-0 focus:ring-4 focus:ring-neutral-tertiary" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+        <span class="sr-only">Open user menu</span>
+        <img class="w-9 h-9 rounded-full" src="../assets/img/28bd2304-3505-476c-9208-64ba0d22d98e.jpeg" alt="user photo">
+      </button>
+      <!-- Dropdown menu -->
+      <div class="z-20 bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44 hidden" id="user-dropdown" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(845.6px, 58.4px, 0px);" aria-hidden="true" data-popper-placement="bottom">
+        <div class="px-4 py-3 text-sm border-b border-default">
+          <span class="block text-heading font-medium">Your Name</span>
+          <span class="block text-body truncate">name@gmail.com</span>
+        </div>
+        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="user-menu-button">
+          <li>
+            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded"> <span><svg class="w-[23px] h-[23px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.7141 15h4.268c.4043 0 .732-.3838.732-.8571V3.85714c0-.47338-.3277-.85714-.732-.85714H6.71411c-.55228 0-1 .44772-1 1v4m10.99999 7v-3h3v3h-3Zm-3 6H6.71411c-.55228 0-1-.4477-1-1 0-1.6569 1.34315-3 3-3h2.99999c1.6569 0 3 1.3431 3 3 0 .5523-.4477 1-1 1Zm-1-9.5c0 1.3807-1.1193 2.5-2.5 2.5s-2.49999-1.1193-2.49999-2.5S8.8334 9 10.2141 9s2.5 1.1193 2.5 2.5Z"/>
+</svg>
+
+
+
+</span><span>پنل کاربری</span></a>
+          </li>
+          <li>
+            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded"><span><svg class="w-[23px] h-[23px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.8" d="M10 19H5a1 1 0 0 1-1-1v-1a3 3 0 0 1 3-3h2m10 1a3 3 0 0 1-3 3m3-3a3 3 0 0 0-3-3m3 3h1m-4 3a3 3 0 0 1-3-3m3 3v1m-3-4a3 3 0 0 1 3-3m-3 3h-1m4-3v-1m-2.121 1.879-.707-.707m5.656 5.656-.707-.707m-4.242 0-.707.707m5.656-5.656-.707.707M12 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+</svg>
+</span><span>تنظیمات</span></a>
+          </li>
+          <li>
+            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">دوره های من</a>
+          </li>
+          <li>
+            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">خروج</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <button data-collapse-toggle="navbar-user" type="button" class="  inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-user" aria-expanded="false"> -->
+        <span class="sr-only">Open main menu</span>
+        <!-- <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"></path></svg> -->
+      </button>
+  </div>
+        <button
+          data-collapse-toggle="mega-menu-full"
+          type="button"
+          class=" inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-lg md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-default"
+          aria-controls="mega-menu-full"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h14"
+            />
+          </svg>
+        </button>
+        <div
+          id="mega-menu-full"
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+        >
+          <ul
+            class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-heading hover:text-fg-brand border-b border-light hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0"
+                aria-current="page"
+                >خانه</a
+              >
+            </li>
+            <li>
+              <button
+                id="mega-menu-full-dropdown-button"
+                data-collapse-toggle="mega-menu-full-dropdown"
+                class="flex items-center justify-between w-full py-2 px-3 font-medium text-heading border-b border-light md:w-auto hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0"
+              >
+                دوری های آموزشی
+                <svg
+                  class="w-4 h-4 ms-1.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 9-7 7-7-7"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-heading hover:text-fg-brand border-b border-light hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0"
+                >تماس با ما</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-heading hover:text-fg-brand border-b border-light hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0"
+                >تماس</a
+              >
+            </li>
+            <li>
+              
+            </li>
+          </ul>
+    
+        </div>
+
+      </div>
+        
+      <div
+        id="mega-menu-full-dropdown"
+        class="h-96 overflow-y-scroll md:h-auto hidden mega-scroll mt-1 bg-neutral-primary-soft border-default shadow-xs border-y"
+      >
+        <div
+          class="grid max-w-screen-lg px-4 py-5 mx-auto text-heading sm:grid-cols-2 md:grid-cols-3 md:px-6 "
+        >
+          <ul aria-labelledby="mega-menu-full-dropdown-button">
+            <li>
+              <a
+                href="#"
+                class="block p-3 rounded-lg hover:bg-neutral-secondary-medium"
+              >
+                <div class="font-semibold flex items-center pb-2">
+                  <span>
+                    <img
+                      class="w-16"
+                      src="../assets/img/images (15).jpeg"
+                      alt=""
+                    /> </span
+                  >آموزش طراحی وب
+                </div>
+                <span class="text-sm text-body">
+                  اصول طراحی و ساخت صفحات وب مدرن و واکنش‌گرا را یاد بگیرید. از
+                  ایده اولیه تا اجرای یک وب‌سایت حرفه‌ای..</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block p-3 rounded-lg hover:bg-neutral-secondary-medium"
+              >
+                <div class="font-semibold flex items-center pb-2">
+                  <span>
+                    <img
+                      class="w-16"
+                      src="../assets/img/images (4).png"
+                      alt=""
+                    />
+                  </span>
+                  آموزش ری اکت(React JS)
+                </div>
+                <span class="text-sm text-body">
+                  ساخت رابط‌های کاربری مدرن و پویا با React را از پایه یاد
+                  بگیرید. مناسب برای ورود حرفه‌ای‌تر به دنیای توسعه وب</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block p-3 rounded-lg hover:bg-neutral-secondary-medium"
+              >
+                <div class="font-semibold flex items-center pb-2">
+                  <span>
+                    <img
+                      class="w-10"
+                      src="../assets/img/flutter-logo-png_seeklogo-354671.png"
+                      alt=""
+                    /> </span
+                  >آموزش Flutter
+                </div>
+                <span class="text-sm text-body">
+                  ساخت اپلیکیشن‌های موبایل زیبا و کاربردی با Flutter را یاد
+                  بگیرید. با یک کد، برای چند پلتفرم اپلیکیشن بسازید.</span
+                >
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="block p-3 rounded-lg hover:bg-neutral-secondary-medium"
+              >
+                <div class="font-semibold flex items-center pb-2">
+                  <span>
+                    <img
+                      class="w-10 ml-2"
+                      src="../assets/img/Python-logo-notext.svg.webp"
+                      alt=""
+                    /> </span
+                  >آموزش Python
+                </div>
+                <span class="text-sm text-body">
+                  برنامه‌نویسی با Python را ساده و پروژه‌محور شروع کنید. مناسب
+                  برای یادگیری برنامه‌نویسی، اتوماسیون و توسعه نرم‌افزار.</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block p-3 rounded-lg hover:bg-neutral-secondary-medium"
+              >
+           <div class="font-semibold flex items-center pb-2">
+                  <span>
+                    <img
+                      class="w-12 ml-2"
+                      src="../assets/img/ui-ux-design-icon-vector-image-can-be-used-design_120816-245463.avif"
+                      alt=""
+                    />
+                  </span>آموزش UI/UX</div>
+                <span class="text-sm text-body">
+                  اصول طراحی رابط و تجربه کاربری را به‌صورت کاربردی یاد بگیرید.
+                  طراحی‌هایی جذاب، ساده و کاربرپسند خلق کنید.</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block p-3 rounded-lg hover:bg-neutral-secondary-medium"
+              >
+                <div class="font-semibold flex items-center pb-2">
+                  <span>
+                    <img
+                      class="w-12 ml-2"
+                      src="../assets/img/images (10).png"
+                      alt=""
+                    />
+                  </span>آموزش Node.js</div>
+                <span class="text-sm text-body">
+                  توسعه سمت سرور و ساخت برنامه‌های تحت وب با Node.js را یاد
+                  بگیرید. با مفاهیم بک‌اند و ساخت API آشنا شوید</span
+                >
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="flex justify-center items-center flex-col  p-8 bg-local bg-dark bg-center  hover:bg-blend-soft-light transition-all duration-700 bg-no-repeat bg-cover rounded-lg bg-blend-multiply" style="background-image: url(../assets/img/programming-skills-scaled.jpg)">
+                <p class="max-w-xl mb-5 font-medium leading-tight tracking-tight text-white">بیش از 
+                  50 دوره آموزشی در زمینه دوره ی طراحی و برنامه نویسی.</p>
+                <button type="button" class="inline-flex items-center px-3 py-1.5 text-xs font-medium text-center text-white border border-white rounded-lg hover:bg-white hover:text-dark focus:ring-4 focus:outline-none">
+                   همه ی دوره های آموشی
+                    <svg class="w-4 h-4 ms-1.5 -me-0.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"></path></svg>
+                </button>
+            </a>
+        </div>
+      </div>
+    </nav>
+        <!-- navbar -->
+         <!-- header -->
+      <header>
+  <div class="grid grid-cols-12 gap-2 mt-12 md:h-screen">
+<div class="col-span-12 md:col-span-5 order-last md:order-first relative overflow-x-hidden before:content-[''] before:bg-pink-500/10 before:w-full  md:before:w-[200%] before:h-full before:absolute before:skew-x-[-30deg] before:top-0 before:left-0">
+  <img class="w-full object-scale-down md:mt-56 lg:mt-36" src="../assets/img/707ee2a6056cb522641926477c36a9d6.png" alt="">
+</div>
+    <div class="col-span-12  md:col-span-7 relative flex justify-center items-center flex-col">
+      <div class=" max-w-[620px] px-4">
+      <h1 class=" text-center md:text-4xl text-2xl mt-[130px] mb-[40px] font-semibold text-gray-800 z-10 ">مرجع تخصصی آموزش طراحی و برنامه نویسی <span class="text-red-500">وب</span></h1>
+      <h4 class="text-gray-700 mb-6 ">همیشه طوری کد بزنید که گویی فردی پس از شما قراره این پروژه رو نگهداری کنه یک دیوانه ی عصبیه و میدونه شما کجا زندگی میکنید.</h4>
+      <div class="md:text-left mb-10 text-center">
+    <a href="" class="bg-gray-700 text-white py-3 px-11 rounded-tl-full rounded-bl-full rounded-br-full hover:bg-gray-800 transition-all duration-150">شروع کنید</a></div>
+    </div>
+      <span class="absolute w-24 -z-10 top-[28%] left-[96%] opacity-[.8]"><img src="../assets/img/shape1.png" alt=""></span>
+            <span class="absolute w-24 -z-10 top-[82px] left-[20%] opacity-[.8]"><img src="../assets/img/shape1.png" alt=""></span>
+      <span class="absolute w-24 md:block hidden -z-10 bottom-[49px] left-[70%] opacity-[.8]"><img src="../assets/img/shape1.png" alt=""></span>
+            <span class="absolute w-24 -z-10 bottom-[295px] left-[60%] opacity-[.7]"><img src="../assets/img/shape2.png" alt=""></span>
+    <span class="absolute w-24 -z-10 top-[104px] left-[84%] opacity-[.5]"><img src="../assets/img/shape2.png" alt=""></span>
+          <span class="absolute w-32 -z-5 bottom-[95px] left-[2%] opacity-[.9]"><img src="../assets/img/shape4.png" alt=""></span>
+                 <span class="absolute w-32 -z-5 bottom-[282px] left-[50%] opacity-[.9]"><img src="../assets/img/shape4.png" alt=""></span>
+       <span class="absolute w-14 -z-5 bottom-[40%] left-[70%] opacity-[.7]"><img src="../assets/img/shape5.png" alt=""></span>
+
+    <span class="absolute w-14 -z-5 bottom-[55%] left-[10%] opacity-[.9]"><img src="../assets/img/shape5.png" alt=""></span>
+    <span class="absolute w-14 -z-5 bottom-[40%] left-[35%] opacity-[10]"><img src="../assets/img/shape3.png" alt=""></span>
+    </div>
+  </div>
+</header>
+<!-- header --> 
+<!-- Categories -->
+     <section class="container mx-auto lg:px-20 xl:px-40 my-32">
+     <h4 class="font-semibold text-center my-10 text-4xl text-red-700">دپارتمان های آموزشی</h4>
+      <div class="grid grid-cols-12  gap-6">
+       <div class="col-span-12 md:col-span-6 lg:col-span-4 border-2 border-dashed rounded-xl border-gray-200  flex flex-col justify-center items-center hover:border-red-600 transition-all duration-300 p-8 group mx-5">
+        <div class="relative ">
+   <svg  width="74" height="79" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path  class="fill-red-200 group-hover:fill-red-400 transition-all duration-200" d="M6.75 2.5C5.50736 2.5 4.5 3.50736 4.5 4.75V6.75H3.25C2.83579 6.75 2.5 7.08579 2.5 7.5C2.5 7.91421 2.83579 8.25 3.25 8.25H4.5V11.75H3.25C2.83579 11.75 2.5 12.0858 2.5 12.5C2.5 12.9142 2.83579 13.25 3.25 13.25H4.5V16.75H3.25C2.83579 16.75 2.5 17.0858 2.5 17.5C2.5 17.9142 2.83579 18.25 3.25 18.25H4.5V20.25C4.5 21.4926 5.50736 22.5 6.75 22.5H17.25C18.4926 22.5 19.5 21.4926 19.5 20.25V4.75C19.5 3.50736 18.4926 2.5 17.25 2.5H6.75ZM7.5 17.5C7.5 17.9142 7.16421 18.25 6.75 18.25C6.33579 18.25 6 17.9142 6 17.5C6 17.0858 6.33579 16.75 6.75 16.75C7.16421 16.75 7.5 17.0858 7.5 17.5ZM7.5 7.5C7.5 7.91421 7.16421 8.25 6.75 8.25C6.33579 8.25 6 7.91421 6 7.5C6 7.08579 6.33579 6.75 6.75 6.75C7.16421 6.75 7.5 7.08579 7.5 7.5ZM7.5 12.5C7.5 12.9142 7.16421 13.25 6.75 13.25C6.33579 13.25 6 12.9142 6 12.5C6 12.0858 6.33579 11.75 6.75 11.75C7.16421 11.75 7.5 12.0858 7.5 12.5Z" fill="#323544"/>
+</svg>
+      <svg class=" absolute top-[50%] left-[50%] transform translate-x-[-50%]  translate-y-[-50%] z-30" width="35" height="34" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path  class="fill-gray-700" d="M15.0582 4.16286C15.1481 3.75851 14.8931 3.35788 14.4888 3.26802C14.0844 3.17816 13.6838 3.43311 13.5939 3.83746L10.0384 19.8374C9.94851 20.2418 10.2035 20.6424 10.6078 20.7323C11.0122 20.8221 11.4128 20.5672 11.5026 20.1628L15.0582 4.16286Z" fill="#323544"/>
+<path d="M7.82913 7.46956C8.12204 7.76244 8.12206 8.23732 7.82918 8.53022L4.35946 12.0003L7.82916 15.47C8.12205 15.7628 8.12205 16.2377 7.82916 16.5306C7.53627 16.8235 7.06139 16.8235 6.7685 16.5306L2.7685 12.5306C2.47561 12.2377 2.4756 11.7629 2.76847 11.47L6.76847 7.46961C7.06135 7.1767 7.53623 7.17668 7.82913 7.46956Z" fill="#323544"/>
+<path d="M17.2685 7.46956C16.9756 7.76244 16.9756 8.23732 17.2685 8.53022L20.7382 12.0003L17.2685 15.47C16.9756 15.7628 16.9756 16.2377 17.2685 16.5306C17.5614 16.8235 18.0363 16.8235 18.3292 16.5306L22.3292 12.5306C22.622 12.2377 22.6221 11.7629 22.3292 11.47L18.3292 7.46961C18.0363 7.1767 17.5614 7.17668 17.2685 7.46956Z" fill="#323544"/>
+</svg>
+        </div>
+        <p class="text-2xl text-gray-800 mb-10 font-bold">طراحی وب</p>
+        <p class="">طراحی وب یکی از مهارت‌های پرکاربرد و جذاب دنیای امروز است که به شما امکان می‌دهد ایده‌های خود را به وب‌سایت‌های زیبا، مدرن و کاربردی تبدیل کنید.</p>
+       </div> 
+       <div class="col-span-12 md:col-span-6 lg:col-span-4 border-2 border-dashed rounded-xl border-gray-200  flex flex-col justify-center items-center hover:border-red-600 transition-all duration-300 p-8 group mx-5">
+        <div class="relative ">
+   <svg  width="74" height="79" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path  class="fill-red-200  group-hover:fill-red-400 transition-all duration-200" d="M6.75 2.5C5.50736 2.5 4.5 3.50736 4.5 4.75V6.75H3.25C2.83579 6.75 2.5 7.08579 2.5 7.5C2.5 7.91421 2.83579 8.25 3.25 8.25H4.5V11.75H3.25C2.83579 11.75 2.5 12.0858 2.5 12.5C2.5 12.9142 2.83579 13.25 3.25 13.25H4.5V16.75H3.25C2.83579 16.75 2.5 17.0858 2.5 17.5C2.5 17.9142 2.83579 18.25 3.25 18.25H4.5V20.25C4.5 21.4926 5.50736 22.5 6.75 22.5H17.25C18.4926 22.5 19.5 21.4926 19.5 20.25V4.75C19.5 3.50736 18.4926 2.5 17.25 2.5H6.75ZM7.5 17.5C7.5 17.9142 7.16421 18.25 6.75 18.25C6.33579 18.25 6 17.9142 6 17.5C6 17.0858 6.33579 16.75 6.75 16.75C7.16421 16.75 7.5 17.0858 7.5 17.5ZM7.5 7.5C7.5 7.91421 7.16421 8.25 6.75 8.25C6.33579 8.25 6 7.91421 6 7.5C6 7.08579 6.33579 6.75 6.75 6.75C7.16421 6.75 7.5 7.08579 7.5 7.5ZM7.5 12.5C7.5 12.9142 7.16421 13.25 6.75 13.25C6.33579 13.25 6 12.9142 6 12.5C6 12.0858 6.33579 11.75 6.75 11.75C7.16421 11.75 7.5 12.0858 7.5 12.5Z" fill="#323544"/>
+</svg>
+   <svg class=" absolute top-[50%] left-[50%] transform translate-x-[-50%]  translate-y-[-50%] z-30" width="35" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="group-hover:fill-white"  d="M6.40587 5.01796C10.1037 4.33386 13.8957 4.33386 17.5936 5.01796L19.1592 5.30761C20.1274 5.48672 20.8666 6.2745 20.9839 7.25207L22.1511 16.9817C22.3117 18.321 21.266 19.4997 19.9171 19.4997H17.8201C17.0395 19.4997 16.3147 19.0951 15.9049 18.4307L14.4714 16.106C14.3348 15.8845 14.0932 15.7497 13.833 15.7497H10.1664C9.90622 15.7497 9.66461 15.8845 9.52804 16.106L8.0945 18.4307C7.68477 19.0951 6.95995 19.4997 6.17936 19.4997H4.08234C2.73345 19.4997 1.68769 18.321 1.84836 16.9817L3.01555 7.25207C3.13282 6.2745 3.87207 5.48672 4.84023 5.30761L6.40587 5.01796ZM10.0567 8.48899C10.0567 8.07477 9.72091 7.73899 9.3067 7.73899C8.89248 7.73899 8.5567 8.07477 8.5567 8.48899V9.49289H7.55125C7.13703 9.49289 6.80125 9.82868 6.80125 10.2429C6.80125 10.6571 7.13703 10.9929 7.55125 10.9929H8.5567V11.9998C8.5567 12.414 8.89248 12.7498 9.3067 12.7498C9.72091 12.7498 10.0567 12.414 10.0567 11.9998V10.9929H11.062C11.4763 10.9929 11.812 10.6571 11.812 10.2429C11.812 9.82868 11.4763 9.49289 11.062 9.49289H10.0567V8.48899ZM15.2327 7.98899C14.8185 7.98899 14.4827 8.32477 14.4827 8.73899C14.4827 9.1532 14.8185 9.48899 15.2327 9.48899H16.1104C16.5246 9.48899 16.8604 9.1532 16.8604 8.73899C16.8604 8.32477 16.5246 7.98899 16.1104 7.98899H15.2327ZM15.2327 10.9962C14.8185 10.9962 14.4827 11.332 14.4827 11.7462C14.4827 12.1604 14.8185 12.4962 15.2327 12.4962H16.1104C16.5246 12.4962 16.8604 12.1604 16.8604 11.7462C16.8604 11.332 16.5246 10.9962 16.1104 10.9962H15.2327Z" fill="#323544"/>
+</svg>
+
+        </div>
+        <p class="text-2xl text-gray-800 mb-10 font-bold">توسعه بازی</p>
+        <p class="">توسعه بازی مهارتی جذاب است که به شما امکان می‌دهد ایده‌های خلاقانه خود را به بازی‌های سرگرم‌کننده و حرفه‌ای تبدیل کنید.</p>
+       </div> 
+    <div class="col-span-12 md:col-span-6 lg:col-span-4 border-2 border-dashed rounded-xl border-gray-200  flex flex-col justify-center items-center hover:border-red-600 transition-all duration-300 p-8 group mx-5">
+        <div class="relative ">
+   <svg  width="74" height="79" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path  class="fill-red-200 group-hover:fill-red-400" d="M6.75 2.5C5.50736 2.5 4.5 3.50736 4.5 4.75V6.75H3.25C2.83579 6.75 2.5 7.08579 2.5 7.5C2.5 7.91421 2.83579 8.25 3.25 8.25H4.5V11.75H3.25C2.83579 11.75 2.5 12.0858 2.5 12.5C2.5 12.9142 2.83579 13.25 3.25 13.25H4.5V16.75H3.25C2.83579 16.75 2.5 17.0858 2.5 17.5C2.5 17.9142 2.83579 18.25 3.25 18.25H4.5V20.25C4.5 21.4926 5.50736 22.5 6.75 22.5H17.25C18.4926 22.5 19.5 21.4926 19.5 20.25V4.75C19.5 3.50736 18.4926 2.5 17.25 2.5H6.75ZM7.5 17.5C7.5 17.9142 7.16421 18.25 6.75 18.25C6.33579 18.25 6 17.9142 6 17.5C6 17.0858 6.33579 16.75 6.75 16.75C7.16421 16.75 7.5 17.0858 7.5 17.5ZM7.5 7.5C7.5 7.91421 7.16421 8.25 6.75 8.25C6.33579 8.25 6 7.91421 6 7.5C6 7.08579 6.33579 6.75 6.75 6.75C7.16421 6.75 7.5 7.08579 7.5 7.5ZM7.5 12.5C7.5 12.9142 7.16421 13.25 6.75 13.25C6.33579 13.25 6 12.9142 6 12.5C6 12.0858 6.33579 11.75 6.75 11.75C7.16421 11.75 7.5 12.0858 7.5 12.5Z" fill="#323544"/>
+</svg>
+<svg class=" absolute top-[50%] left-[50%] transform translate-x-[-50%]  translate-y-[-50%] z-30" width="35" height="34" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="group-hover:fill-white"  d="M17.1371 9.025H16.1871V12.225H17.1371V9.025Z" fill="#323544"/>
+<path class="group-hover:fill-white"  d="M2.53711 6.92187C2.53711 5.67923 3.54447 4.67188 4.78711 4.67188H20.2871C21.5298 4.67188 22.5371 5.67923 22.5371 6.92188V14.3281C22.5371 15.5708 21.5298 16.5781 20.2871 16.5781H13.2871V18.8281H15.5371C15.9514 18.8281 16.2871 19.1639 16.2871 19.5781C16.2871 19.9923 15.9514 20.3281 15.5371 20.3281H9.53714C9.12293 20.3281 8.78714 19.9923 8.78714 19.5781C8.78714 19.1639 9.12293 18.8281 9.53714 18.8281H11.7871V16.5781H4.78711C3.54447 16.5781 2.53711 15.5708 2.53711 14.3281V6.92187ZM6.63711 8.9375V10.0625C6.63711 10.7321 7.17996 11.275 7.84961 11.275H8.88711V12.225H7.28711C6.92812 12.225 6.63711 12.516 6.63711 12.875C6.63711 13.234 6.92812 13.525 7.28711 13.525H8.97461C9.64425 13.525 10.1871 12.9821 10.1871 12.3125V11.1875C10.1871 10.5179 9.64425 9.975 8.97461 9.975H7.93711V9.025H9.53711C9.89609 9.025 10.1871 8.73398 10.1871 8.375C10.1871 8.01602 9.89609 7.725 9.53711 7.725H7.84961C7.17996 7.725 6.63711 8.26785 6.63711 8.9375ZM10.7621 8.375V12.875C10.7621 13.234 11.0531 13.525 11.4121 13.525H13.6621C14.0211 13.525 14.3121 13.234 14.3121 12.875C14.3121 12.516 14.0211 12.225 13.6621 12.225H12.0621V11.275H13.6621C14.0211 11.275 14.3121 10.984 14.3121 10.625C14.3121 10.266 14.0211 9.975 13.6621 9.975H12.0621V9.025H13.6621C14.0211 9.025 14.3121 8.73398 14.3121 8.375C14.3121 8.01602 14.0211 7.725 13.6621 7.725H11.4121C11.0531 7.725 10.7621 8.01602 10.7621 8.375ZM14.8871 8.9375V12.3125C14.8871 12.9821 15.43 13.525 16.0996 13.525H17.2246C17.8943 13.525 18.4371 12.9821 18.4371 12.3125V8.9375C18.4371 8.26785 17.8943 7.725 17.2246 7.725H16.0996C15.43 7.725 14.8871 8.26785 14.8871 8.9375Z" fill="#323544"/>
+</svg>
+
+
+        </div>
+        <p class="text-2xl text-gray-800 mb-10 font-bold">Seo</p>
+        <p class="">سئو مهارتی کاربردی است که به شما کمک می‌کند رتبه سایت خود را در موتورهای جستجو بهبود دهید و بازدید بیشتری جذب کنید.</p>
+       </div> 
+       <div class="col-span-12 md:col-span-6 lg:col-span-4 border-2 border-dashed rounded-xl border-gray-200  flex flex-col justify-center items-center hover:border-red-600 transition-all duration-300 p-8 group mx-5">
+        <div class="relative ">
+   <svg  width="74" height="79" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path  class="fill-red-200 group-hover:fill-red-400" d="M6.75 2.5C5.50736 2.5 4.5 3.50736 4.5 4.75V6.75H3.25C2.83579 6.75 2.5 7.08579 2.5 7.5C2.5 7.91421 2.83579 8.25 3.25 8.25H4.5V11.75H3.25C2.83579 11.75 2.5 12.0858 2.5 12.5C2.5 12.9142 2.83579 13.25 3.25 13.25H4.5V16.75H3.25C2.83579 16.75 2.5 17.0858 2.5 17.5C2.5 17.9142 2.83579 18.25 3.25 18.25H4.5V20.25C4.5 21.4926 5.50736 22.5 6.75 22.5H17.25C18.4926 22.5 19.5 21.4926 19.5 20.25V4.75C19.5 3.50736 18.4926 2.5 17.25 2.5H6.75ZM7.5 17.5C7.5 17.9142 7.16421 18.25 6.75 18.25C6.33579 18.25 6 17.9142 6 17.5C6 17.0858 6.33579 16.75 6.75 16.75C7.16421 16.75 7.5 17.0858 7.5 17.5ZM7.5 7.5C7.5 7.91421 7.16421 8.25 6.75 8.25C6.33579 8.25 6 7.91421 6 7.5C6 7.08579 6.33579 6.75 6.75 6.75C7.16421 6.75 7.5 7.08579 7.5 7.5ZM7.5 12.5C7.5 12.9142 7.16421 13.25 6.75 13.25C6.33579 13.25 6 12.9142 6 12.5C6 12.0858 6.33579 11.75 6.75 11.75C7.16421 11.75 7.5 12.0858 7.5 12.5Z" fill="#323544"/>
+</svg>
+    <svg class=" absolute top-[50%] left-[50%] transform translate-x-[-50%]  translate-y-[-50%] z-30" width="35" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path  class="group-hover:fill-white" d="M5.75 4.25C5.75 3.00736 6.75736 2 8 2H16C17.2426 2 18.25 3.00736 18.25 4.25V19.75C18.25 20.9926 17.2426 22 16 22H8C6.75736 22 5.75 20.9926 5.75 19.75V4.25ZM10.25 18.25C10.25 18.6642 10.5858 19 11 19H13C13.4142 19 13.75 18.6642 13.75 18.25C13.75 17.8358 13.4142 17.5 13 17.5H11C10.5858 17.5 10.25 17.8358 10.25 18.25Z" fill="#323544"/>
+</svg>
+
+        </div>
+        <p class="text-2xl text-gray-800 mb-10 font-bold">توسعه اپلیکیشن</p>
+        <p class="">توسعه اپلیکیشن مهارتی کاربردی است که به شما امکان می‌دهد برنامه‌های موبایلی زیبا، سریع و کاربردی برای کاربران بسازید.</p>
+       </div> 
+   <div class="col-span-12 md:col-span-6 lg:col-span-4 border-2 border-dashed rounded-xl border-gray-200  flex flex-col justify-center items-center hover:border-red-600 transition-all duration-300 p-8 group mx-5">
+        <div class="relative ">
+   <svg  width="74" height="79" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path  class="fill-red-200 group-hover:fill-red-400" d="M6.75 2.5C5.50736 2.5 4.5 3.50736 4.5 4.75V6.75H3.25C2.83579 6.75 2.5 7.08579 2.5 7.5C2.5 7.91421 2.83579 8.25 3.25 8.25H4.5V11.75H3.25C2.83579 11.75 2.5 12.0858 2.5 12.5C2.5 12.9142 2.83579 13.25 3.25 13.25H4.5V16.75H3.25C2.83579 16.75 2.5 17.0858 2.5 17.5C2.5 17.9142 2.83579 18.25 3.25 18.25H4.5V20.25C4.5 21.4926 5.50736 22.5 6.75 22.5H17.25C18.4926 22.5 19.5 21.4926 19.5 20.25V4.75C19.5 3.50736 18.4926 2.5 17.25 2.5H6.75ZM7.5 17.5C7.5 17.9142 7.16421 18.25 6.75 18.25C6.33579 18.25 6 17.9142 6 17.5C6 17.0858 6.33579 16.75 6.75 16.75C7.16421 16.75 7.5 17.0858 7.5 17.5ZM7.5 7.5C7.5 7.91421 7.16421 8.25 6.75 8.25C6.33579 8.25 6 7.91421 6 7.5C6 7.08579 6.33579 6.75 6.75 6.75C7.16421 6.75 7.5 7.08579 7.5 7.5ZM7.5 12.5C7.5 12.9142 7.16421 13.25 6.75 13.25C6.33579 13.25 6 12.9142 6 12.5C6 12.0858 6.33579 11.75 6.75 11.75C7.16421 11.75 7.5 12.0858 7.5 12.5Z" fill="#323544"/>
+</svg>
+  <svg class=" absolute top-[50%] left-[50%] transform translate-x-[-50%]  translate-y-[-50%] z-30" width="35" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path  class="group-hover:fill-white" class="" d="M9.27179 10.0444C9.75897 10.0445 10.1541 10.4397 10.1543 10.9268V12.1798C10.1541 12.667 9.75901 13.0621 9.27179 13.0622C8.78446 13.0622 8.38891 12.6671 8.38879 12.1798V10.9268C8.38895 10.4396 8.78451 10.0444 9.27179 10.0444Z" fill="#323544"/>
+<path d="M14.8229 10.0444C15.3102 10.0444 15.7052 10.4397 15.7054 10.9268V12.1798C15.7053 12.667 15.3101 13.0621 14.8229 13.0622C14.3356 13.0622 13.9406 12.6671 13.9404 12.1798V10.9268C13.9406 10.4396 14.3356 10.0444 14.8229 10.0444Z" fill="#323544"/>
+<path   class="group-hover:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 3.375C17.7992 3.37508 22.4999 7.53687 22.5 12.6707C22.5 17.8047 17.7993 20.6182 12.0003 20.6183C6.20124 20.6183 1.5 17.8048 1.5 12.6707C1.50014 7.53682 6.20132 3.375 12.0003 3.375ZM12.0471 5.10522C7.87094 5.10531 4.4855 8.10434 4.48527 11.804C4.48527 15.5039 7.87083 17.5314 12.0471 17.5315C14.399 17.5314 16.5002 16.8887 17.8871 15.666L19.1927 16.5553C19.3682 16.6748 19.6057 16.5492 19.6058 16.3369V11.9856C19.6075 11.9256 19.6089 11.8649 19.6089 11.804C19.6089 10.578 19.2367 9.4289 18.5875 8.44043C18.293 8.66314 18.0643 8.96721 17.9334 9.3208C17.5875 10.2555 16.2655 10.2555 15.9196 9.3208C15.7217 8.78594 15.2994 8.3647 14.7645 8.16679C13.8301 7.8208 13.8302 6.49846 14.7645 6.15241C14.9912 6.0685 15.1973 5.94363 15.3749 5.78773C14.3707 5.35096 13.2413 5.10526 12.0471 5.10522ZM17.1209 5.29887C17.0543 5.1193 16.8003 5.11927 16.7336 5.29887C16.4479 6.07108 15.8387 6.68021 15.0666 6.96595C14.887 7.03261 14.887 7.28655 15.0666 7.35325C15.8387 7.63899 16.4479 8.24812 16.7336 9.02033C16.8003 9.20016 17.0543 9.20013 17.1209 9.02033C17.4067 8.24812 18.0158 7.63899 18.788 7.35325C18.9678 7.28663 18.9678 7.03253 18.788 6.96595C18.0158 6.68021 17.4067 6.07108 17.1209 5.29887Z" fill="#323544"/>
+</svg>
+
+        </div>
+        <p class="text-2xl text-gray-800 mb-10 font-bold">هوش مصنوعی</p>
+        <p class="">هوش مصنوعی یکی از تکنولوژی‌های مهم دنیای امروز است که به شما امکان می‌دهد ابزارها و پروژه‌های هوشمند و کاربردی بسازید.</p>
+       </div> 
+   <div class="col-span-12 md:col-span-6 lg:col-span-4 border-2 border-dashed rounded-xl border-gray-200  flex flex-col justify-center items-center hover:border-red-600 transition-all duration-300 p-8 group mx-5">
+        <div class="relative ">
+   <svg  width="74" height="79" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path  class="fill-red-200 group-hover:fill-red-400" d="M6.75 2.5C5.50736 2.5 4.5 3.50736 4.5 4.75V6.75H3.25C2.83579 6.75 2.5 7.08579 2.5 7.5C2.5 7.91421 2.83579 8.25 3.25 8.25H4.5V11.75H3.25C2.83579 11.75 2.5 12.0858 2.5 12.5C2.5 12.9142 2.83579 13.25 3.25 13.25H4.5V16.75H3.25C2.83579 16.75 2.5 17.0858 2.5 17.5C2.5 17.9142 2.83579 18.25 3.25 18.25H4.5V20.25C4.5 21.4926 5.50736 22.5 6.75 22.5H17.25C18.4926 22.5 19.5 21.4926 19.5 20.25V4.75C19.5 3.50736 18.4926 2.5 17.25 2.5H6.75ZM7.5 17.5C7.5 17.9142 7.16421 18.25 6.75 18.25C6.33579 18.25 6 17.9142 6 17.5C6 17.0858 6.33579 16.75 6.75 16.75C7.16421 16.75 7.5 17.0858 7.5 17.5ZM7.5 7.5C7.5 7.91421 7.16421 8.25 6.75 8.25C6.33579 8.25 6 7.91421 6 7.5C6 7.08579 6.33579 6.75 6.75 6.75C7.16421 6.75 7.5 7.08579 7.5 7.5ZM7.5 12.5C7.5 12.9142 7.16421 13.25 6.75 13.25C6.33579 13.25 6 12.9142 6 12.5C6 12.0858 6.33579 11.75 6.75 11.75C7.16421 11.75 7.5 12.0858 7.5 12.5Z" fill="#323544"/>
+</svg>
+<svg class=" absolute top-[50%] left-[50%] transform translate-x-[-50%]  translate-y-[-50%] z-30" width="35" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="group-hover:fill-white"  opacity="0" d="M18.2585 5.61328C19.4183 6.4522 20.3623 7.55449 21.0129 8.82949C21.6636 10.1045 22.0022 11.5157 22.0009 12.9471C22.0009 17.9457 17.9562 21.9984 12.9665 21.9984C11.5636 21.9992 10.1798 21.6725 8.92529 21.0444C7.67079 20.4163 6.58018 19.5041 5.74023 18.3804C7.27844 19.4998 9.13241 20.1019 11.0348 20.0996C16.0245 20.0996 20.0692 16.046 20.0692 11.0483C20.0692 9.00819 19.3945 7.12717 18.2585 5.61328Z" fill="#323544"/>
+<path d="M11.0108 5.95584C12.0384 5.95584 12.8749 6.79501 12.8749 7.82263C12.8749 8.13732 12.7949 8.4449 12.6456 8.71692C12.58 8.83853 12.565 8.98107 12.6038 9.11367C12.6425 9.24628 12.732 9.35828 12.8527 9.42541C13.0438 9.52942 13.2705 9.50009 13.4279 9.3703C13.7612 9.16406 14.1488 9.06983 14.54 9.09917C15.0324 9.13711 15.4896 9.36881 15.8114 9.74344C16.1332 10.1181 16.2933 10.605 16.2565 11.0975C16.2387 11.3417 16.173 11.58 16.0631 11.7987C15.9532 12.0175 15.8014 12.2125 15.6161 12.3725C15.4309 12.5326 15.2159 12.6546 14.9835 12.7316C14.7512 12.8086 14.5059 12.839 14.2617 12.8212C13.85 12.7912 13.4601 12.6244 13.1541 12.3474C13.1372 12.3261 13.1221 12.3056 13.1043 12.2852C13.0752 12.251 13.0421 12.2206 13.0056 12.1945C12.9624 12.1454 12.9217 12.0941 12.8838 12.0407C12.8444 11.9854 12.7945 11.9385 12.737 11.9025C12.6794 11.8665 12.6154 11.8422 12.5484 11.831C12.4815 11.8197 12.413 11.8218 12.3468 11.837C12.2807 11.8523 12.2182 11.8804 12.1629 11.9198C12.1076 11.9592 12.0606 12.0091 12.0247 12.0667C11.9887 12.1242 11.9644 12.1883 11.9531 12.2552C11.9419 12.3222 11.944 12.3907 11.9592 12.4568C11.9745 12.523 12.0026 12.5855 12.042 12.6408C12.1469 12.7892 12.2616 12.9279 12.3887 13.0514C12.5843 13.3101 12.7087 13.6177 12.7487 13.9448C12.7798 14.1875 12.7624 14.434 12.6976 14.6699C12.6327 14.9058 12.5217 15.1265 12.3709 15.3192C12.2205 15.5128 12.0333 15.6747 11.82 15.7955C11.6067 15.9164 11.3715 15.9937 11.1282 16.0232C10.8852 16.0532 10.6387 16.0349 10.4028 15.9694C10.1669 15.904 9.9462 15.7926 9.75339 15.6418C9.56058 15.4909 9.39942 15.3035 9.27914 15.0902C9.15886 14.877 9.08183 14.6421 9.05245 14.3991C9.00159 13.9975 9.08371 13.5904 9.28625 13.2399V13.2444C9.62382 12.9716 9.89609 12.6268 10.0831 12.2352C10.2702 11.8436 10.3672 11.4151 10.3672 10.9811C10.3672 10.1632 10.0267 9.42986 9.48449 8.90093L9.45782 8.85204C9.27235 8.57093 9.16635 8.24489 9.15103 7.90846C9.13572 7.57203 9.21165 7.23771 9.3708 6.94091C9.52996 6.6441 9.7664 6.39585 10.0551 6.22244C10.3438 6.04903 10.674 5.95691 11.0108 5.95584Z" fill="#323544"/>
+<path d="M7.46745 9.11339C7.96268 9.11339 8.43762 9.31012 8.7878 9.6603C9.13797 10.0105 9.3347 10.4854 9.3347 10.9806C9.3347 11.4759 9.13797 11.9508 8.7878 12.301C8.43762 12.6512 7.96268 12.8479 7.46745 12.8479C6.97352 12.8465 6.50033 12.6491 6.15182 12.2991C5.8033 11.949 5.60795 11.475 5.60866 10.9811C5.60866 9.95078 6.4416 9.11339 7.46745 9.11339Z" fill="#323544"/>
+<path class="group-hover:fill-white" d="M11.0348 2C16.0245 2 20.0692 6.05273 20.0692 11.0513C20.0692 16.0499 16.0245 20.1026 11.0348 20.1026C6.04513 20.1026 1.99951 16.0499 1.99951 11.0513C1.99951 6.05184 6.04513 2 11.0348 2ZM11.0161 4.91843C10.6073 4.91921 10.2032 5.00623 9.83022 5.17382C9.45727 5.34141 9.12387 5.58579 8.85179 5.891C8.57972 6.19622 8.3751 6.55539 8.25129 6.94507C8.12748 7.33475 8.08726 7.74616 8.13328 8.15244C7.70746 8.05407 7.26493 8.05298 6.83863 8.14926C6.41233 8.24554 6.01323 8.4367 5.67101 8.70853C5.32879 8.98035 5.05227 9.32585 4.86202 9.7193C4.67177 10.1128 4.57269 10.544 4.57214 10.9811C4.57214 12.5812 5.87356 13.8808 7.4719 13.8808C7.65947 13.8808 7.84259 13.8666 8.02127 13.8319C7.9946 14.0613 7.99638 14.2906 8.02572 14.5253C8.07105 14.9043 8.19103 15.2705 8.3787 15.6028C8.56637 15.9351 8.81803 16.227 9.11913 16.4615C9.4188 16.6969 9.76229 16.8704 10.1296 16.9719C10.497 17.0734 10.8808 17.1008 11.2588 17.0526C11.6375 17.0069 12.0032 16.8864 12.3348 16.6981C12.6665 16.5098 12.9573 16.2574 13.1905 15.9557C13.6661 15.3432 13.875 14.5822 13.7799 13.8133C13.7799 13.8079 13.7755 13.8017 13.7755 13.7955C13.9097 13.8248 14.0501 13.8444 14.1897 13.8542C14.5687 13.8834 14.9496 13.8371 15.3105 13.718C15.6715 13.5988 16.0051 13.4091 16.2921 13.1599C16.7261 12.7848 17.0393 12.2897 17.1925 11.7369C17.3457 11.1841 17.3318 10.5983 17.1528 10.0533C16.9737 9.50838 16.6374 9.02857 16.1863 8.67434C15.7351 8.3201 15.1892 8.10728 14.6173 8.06265C14.3767 8.04495 14.1349 8.05689 13.8972 8.09821C13.9357 7.69622 13.8899 7.29064 13.7627 6.90736C13.6355 6.52409 13.4298 6.17157 13.1586 5.87231C12.8875 5.57306 12.5569 5.33366 12.188 5.16941C11.8191 5.00517 11.42 4.91968 11.0161 4.91843Z" fill="#323544"/>
+</svg>
+
+        </div>
+        <p class="text-2xl text-gray-800 mb-10 font-bold">طراحی UI/UX</p>
+        <p class="">طراحی UI/UX به شما کمک می‌کند رابط‌هایی زیبا و کاربرپسند ایجاد کنید و تجربه‌ای بهتر برای کاربران رقم بزنید.</p>
+       </div> 
+
+      </div>
+     </section>
+<!-- Categories -->
+<!-- Courses -->
+<section class="container bg-gray-50 mx-auto lg:px-20 xl:px-40">
+  <h4 class="font-semibold  my-10 text-2xl  text-gray-700 relative before:absolute before:content[''] before:w-10 before:h-1 before:bg-red-600 before:top-4 before:right-0 ps-12 after:absolute after:content[''] after:w-full overflow-hidden after:h-1 after:bg-red-600 after:top-4 after:right[260px]">دپارتمان های آموزشی</h4>
+<section>
+  <div class="container mt-24">
+    <div class="grid grid-cols-12 gap-6 mx-2">
+   <div class="col-span-12 md:col-span-6 lg:col-span-4 overflow-hidden rounded-md bg-white border-gray-300 relative hover:shadow-xl transition-all duration-200">
+    <a href="#">
+      <span class="absolute bg-green-500 px-2 pt-1 text-white left-2 top-1 rounded-md text-[14px]">رایگان</span>
+      <img class="w-full object-cover h-60" src="../assets/img/Flutter App Development Workspace.png" alt="">
+      <div class="p-5">
+        <h4 class="mb-2 text-[18px] text-gray-800 font-semibold">دوره ی آموزشی فلاتر</h4>
+        <p class="text-gray-700 font-normal mb-3 ">دراین دوره به صورت کاملا کاربردی و پرکتیکال با فلاتر آشنا خواهید شد.</p>
+        <div class="text-left mt-5 hover:shadow-2xl">
+        <a href="" class=" bg-red-300 text-white px-2 py-1 text-[14px] rounded-md hover:bg-red-400 hover:mx-0.5 transition-all duration-150"0>ادامه مطلب</a></div>
+      </div>
+    </a>
+   </div>
+ <div class="col-span-12 md:col-span-6 lg:col-span-4  bg-white border-gray-300  overflow-hidden rounded-md relative hover:shadow-xl transition-all duration-200">
+    <a href="#">
+      <span class="absolute bg-green-500 px-2 pt-1 text-white left-2 top-1 rounded-md text-[14px]">رایگان</span>
+      <img class="w-full object-cover h-60" src="../assets/img/SEO Strategy Workspace.png" alt="">
+      <div class="p-5">
+        <h4 class="mb-2 text-[18px] text-gray-800 font-semibold">دوره ی آموزشی Seo</h4>
+        <p class="text-gray-700 font-normal mb-3 ">با آموزش سئو، اصول بهینه‌سازی سایت، تولید محتوای هدفمند و روش‌های افزایش بازدید از گوگل را یاد بگیرید.</p>
+        <div class="text-left mt-5 hover:shadow-2xl">
+        <a href="" class=" bg-red-300 text-white px-2 py-1 text-[14px] rounded-md hover:bg-red-400 hover:mx-0.5 transition-all duration-150"0>ادامه مطلب</a></div>
+      </div>
+    </a>
+   </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-4  bg-white border-gray-300  overflow-hidden rounded-md relative hover:shadow-xl transition-all duration-200">
+    <a href="#">
+      <span class="absolute bg-green-500 px-2 pt-1 text-white left-2 top-1 rounded-md text-[14px]">رایگان</span>
+      <img class="w-full object-cover h-60" src="../assets/img/Pastel Web Design Workspace (1).png" alt="">
+      <div class="p-5">
+        <h4 class="mb-2 text-[18px] text-gray-800 font-semibold">دوره ی آموزشی طراحی وب</h4>
+        <p class="text-gray-700 font-normal mb-3 ">آموزش طراحی سایت‌های زیبا، حرفه‌ای و ریسپانسیو.</p>
+        <div class="text-left mt-5 hover:shadow-2xl">
+        <a href="" class=" bg-red-300 text-white px-2 py-1 text-[14px] rounded-md hover:bg-red-400 hover:mx-0.5 transition-all duration-150"0>ادامه مطلب</a></div>
+      </div>
+    </a>
+   </div>
+    <div class="col-span-12 md:col-span-6 lg:col-span-4  bg-white border-gray-300 overflow-hidden rounded-md relative hover:shadow-xl transition-all duration-200">
+    <a href="#">
+      <span class="absolute bg-green-500 px-2 pt-1 text-white left-2 top-1 rounded-md text-[14px]">رایگان</span>
+      <img class="w-full object-cover h-60" src="../assets/img/Pastel React Learning Workspace.png" alt="">
+      <div class="p-5">
+        <h4 class="mb-2 text-[18px] text-gray-800 font-semibold">دوره ی آموزشی React</h4>
+        <p class="text-gray-700 font-normal mb-3 ">آموزش React برای ساخت وب‌سایت‌های مدرن و تعاملی.</p>
+        <div class="text-left mt-5 hover:shadow-2xl">
+        <a href="" class=" bg-red-300 text-white px-2 py-1 text-[14px] rounded-md hover:bg-red-400 hover:mx-0.5 transition-all duration-150"0>ادامه مطلب</a></div>
+      </div>
+    </a>
+   </div>
+ <div class="col-span-12 md:col-span-6 lg:col-span-4  bg-white border-gray-300 overflow-hidden rounded-md relative hover:shadow-xl transition-all duration-200">
+    <a href="#">
+      <span class="absolute bg-green-500 px-2 pt-1 text-white left-2 top-1 rounded-md text-[14px]">رایگان</span>
+      <img class="w-full object-cover h-60" src="../assets/img/WordPress Web Design Workspace.png" alt="">
+      <div class="p-5">
+        <h4 class="mb-2 text-[18px] text-gray-800 font-semibold">دوره ی آموزشی وردپرس</h4>
+        <p class="text-gray-700 font-normal mb-3 ">آموزش وردپرس برای طراحی و مدیریت آسان وب‌سایت بدون کدنویسی پیچیده.</p>
+        <div class="text-left mt-5 hover:shadow-2xl">
+        <a href="" class=" bg-red-300 text-white px-2 py-1 text-[14px] rounded-md hover:bg-red-400 hover:mx-0.5 transition-all duration-150"0>ادامه مطلب</a></div>
+      </div>
+    </a>
+   </div>
+ <div class="col-span-12 md:col-span-6 lg:col-span-4  bg-white border-gray-300 overflow-hidden rounded-md relative hover:shadow-xl transition-all duration-200">
+    <a href="#">
+      <span class="absolute bg-green-500 px-2 pt-1 text-white left-2 top-1 rounded-md text-[14px]">رایگان</span>
+      <img class="w-full object-cover h-60" src="../assets/img/Pastel UI_UX Design Workspace.png" alt="">
+      <div class="p-5">
+        <h4 class="mb-2 text-[18px] text-gray-800 font-semibold">دوره ی آموزشی UI</h4>
+        <p class="text-gray-700 font-normal mb-3 ">آموزش طراحی رابط کاربری (UI) زیبا، مدرن و کاربرپسند.</p>
+        <div class="text-left mt-5 hover:shadow-2xl">
+        <a href="" class=" bg-red-300 text-white px-2 py-1 text-[14px] rounded-md hover:bg-red-400 hover:mx-0.5 transition-all duration-150"0>ادامه مطلب</a></div>
+      </div>
+    </a>
+   </div>
+
+    </div>
+
+    </div>
+    </div>
+
+
+  </div>
+</section>
+
+</section>
+<!-- Courses -->
+ <!-- Articles -->
+  <section class="container mx-auto lg:px-20 xl:px-40" >
+<h4 class="font-semibold  my-32 text-2xl  text-gray-700 relative before:absolute before:content[''] before:w-10 before:h-1 before:bg-red-600 before:top-4 before:right-0 ps-12 after:absolute after:content[''] after:w-full overflow-hidden after:h-1 after:bg-red-600 after:top-4 after:right[260px]">جدیدترین مطالب</h4>
+
+<div class="grid grid-cols-12 gap-4 items-stretch px-4">
+
+  <!-- تصویر بزرگ سمت چپ -->
+  <div class="col-span-12 xl:col-span-6 min-w-0">
+    <div class="relative h-[300px] xl:h-full min-h-[300px] overflow-hidden rounded-lg">
+      <img
+        src="../assets/img/-2147483648_-211206.jpg"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+
+      <p class="absolute bottom-0 right-0 w-full text-white text-center
+                text-sm md:text-xl px-4 py-5 bg-white/30 backdrop-blur-md font-bold">
+        از کدنویسی تا طراحی یک وبسایت حرفه‌ای
+      </p>
+    </div>
+  </div>
+
+  <!-- تصاویر سمت راست -->
+  <div class="col-span-12 xl:col-span-6 grid grid-cols-2 grid-rows-2 gap-4 min-w-0">
+
+    <div class="relative min-w-0 min-h-[150px] overflow-hidden rounded-lg">
+      <img
+        src="../assets/img/f3d9adfd835a7fa4c02245e11346920a.jpg"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+      <p class="absolute bottom-0 right-0 w-full text-center text-sm
+                px-2 py-3 bg-white/30 backdrop-blur-sm">
+        ترفندهایی برای رسیدن به رتبه‌های بهتر در گوگل.
+      </p>
+    </div>
+
+    <div class="relative min-w-0 min-h-[150px] overflow-hidden rounded-lg">
+      <img
+        src="../assets/img/8e2be3f7fa565f307e3ee0bd63f1fe03.jpg"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+      <p class="absolute bottom-0 right-0 w-full text-center text-sm
+                px-2 py-3 bg-white/30 backdrop-blur-sm">
+طراحی تجربه‌هایی که کاربران دوست دارن.
+      </p>
+    </div>
+
+    <div class="relative min-w-0 min-h-[150px] overflow-hidden rounded-lg">
+      <img
+        src="../assets/img/b123c01b467c8dbee3a3d42fd7b6e3b7.jpg"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+      <p class="absolute bottom-0 right-0 w-full text-center text-sm
+                px-2 py-3 bg-white/30 backdrop-blur-sm">
+ساخت رابط‌های کاربری مدرن و پویا.      </p>
+    </div>
+
+    <div class="relative min-w-0 min-h-[150px] overflow-hidden rounded-lg">
+      <img
+        src="../assets/img/4ba189376ad8db18ff6611fdf0666600.jpg"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+      <p class="absolute bottom-0 right-0 w-full text-center text-sm
+                px-2 py-3 bg-white/30 backdrop-blur-sm">
+خلق اپلیکیشن‌های کاربردی برای موبایل      </p>
+    </div>
+
+  </div>
+</div>
+
+  </section>
+  <!-- Articles -->
+   <!-- prices -->
+   <div class="container mx-auto lg:px-20 xl:px-40 my-32">
+    <h4 class="font-semibold  my-10 text-2xl  text-gray-700 relative before:absolute before:content[''] before:w-10 before:h-1 before:bg-red-600 before:top-4 before:right-0 ps-12 after:absolute after:content[''] after:w-full overflow-hidden after:h-1 after:bg-red-600 after:top-4 after:right[260px]">پلن های آموزشی</h4>
+    <div class="flex justify-center mb-20 ">
+      <div class="flex h-12 rounded-full overflow-hidden w-[200px]">
+      <button id="monthly" class="bg-red-500 w-full h-full text-white" onclick="changePriceMonthly()">پلن های ماهانه</button>
+      <button id="yearly"  onclick="changePriceYearly()" class="bg-gray-100 w-full h-full ">پلن های سالانه</button></div>
+    </div>
+    <div class="grid grid-cols-12">
+    <div class="col-span-12 md:col-span-4  border-2 border-dashed rounded-xl border-gray-200  flex flex-col justify-center items-center hover:border-red-600 transition-all duration-300 p-8 group mx-5">
+      <div class="relative">    
+         <span class="bg-green-500 text-white w-10 h-10 justify items-center rounded-full hidden discountBadge ">20 %</span>
+     </div>
+        <div class="relative ">
+      
+          <span class=" absolute top-[50%] left-[50%] transform translate-x-[-50%]  translate-y-[-50%] z-30 group-hover:text-white font-semibold transition-all duration-200">تیتانیوم</span>
+   <svg width="74" height="79" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="fill-red-200 group-hover:fill-red-400" d="M6.75 2.5C5.50736 2.5 4.5 3.50736 4.5 4.75V6.75H3.25C2.83579 6.75 2.5 7.08579 2.5 7.5C2.5 7.91421 2.83579 8.25 3.25 8.25H4.5V11.75H3.25C2.83579 11.75 2.5 12.0858 2.5 12.5C2.5 12.9142 2.83579 13.25 3.25 13.25H4.5V16.75H3.25C2.83579 16.75 2.5 17.0858 2.5 17.5C2.5 17.9142 2.83579 18.25 3.25 18.25H4.5V20.25C4.5 21.4926 5.50736 22.5 6.75 22.5H17.25C18.4926 22.5 19.5 21.4926 19.5 20.25V4.75C19.5 3.50736 18.4926 2.5 17.25 2.5H6.75ZM7.5 17.5C7.5 17.9142 7.16421 18.25 6.75 18.25C6.33579 18.25 6 17.9142 6 17.5C6 17.0858 6.33579 16.75 6.75 16.75C7.16421 16.75 7.5 17.0858 7.5 17.5ZM7.5 7.5C7.5 7.91421 7.16421 8.25 6.75 8.25C6.33579 8.25 6 7.91421 6 7.5C6 7.08579 6.33579 6.75 6.75 6.75C7.16421 6.75 7.5 7.08579 7.5 7.5ZM7.5 12.5C7.5 12.9142 7.16421 13.25 6.75 13.25C6.33579 13.25 6 12.9142 6 12.5C6 12.0858 6.33579 11.75 6.75 11.75C7.16421 11.75 7.5 12.0858 7.5 12.5Z" fill="#323544"></path>
+</svg>
+
+
+        </div>
+        <p class="text-2xl text-gray-800 mb-10 font-bold"><span id="titunium">300
+        </span> <span id="tituniumCurrency">هزار</span>تومان</p>
+        <p class="mb-10">طراحی UI/UX به شما کمک می‌کند رابط‌هایی زیبا و کاربرپسند ایجاد کنید و تجربه‌ای بهتر برای کاربران رقم بزنید.</p>
+        <a href="#" class="bg-gray-200 w-2/4 group-hover:text-white group-hover:bg-red-600 transition-all duration-300 h-14 flex justify-center items-center text-xl rounded-lg">عضویت</a>
+       </div>
+        <div class="col-span-12 md:col-span-4  border-2 border-dashed rounded-xl  flex flex-col justify-center items-center border-red-600 transition-all duration-300 p-8 group mx-5 shadow-lg">
+      <div class="relative">    
+         <span class="bg-green-500 text-white w-10 h-10  justify items-center rounded-full hidden discountBadge">35 %</span>
+     </div>
+        <div class="relative ">
+      
+          <span class=" absolute top-[50%] left-[50%] transform translate-x-[-50%]  translate-y-[-50%] z-30 text-white font-semibold transition-all duration-200">تیتانیوم</span>
+   <svg width="74" height="79" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="fill-red-200 fill-red-400" d="M6.75 2.5C5.50736 2.5 4.5 3.50736 4.5 4.75V6.75H3.25C2.83579 6.75 2.5 7.08579 2.5 7.5C2.5 7.91421 2.83579 8.25 3.25 8.25H4.5V11.75H3.25C2.83579 11.75 2.5 12.0858 2.5 12.5C2.5 12.9142 2.83579 13.25 3.25 13.25H4.5V16.75H3.25C2.83579 16.75 2.5 17.0858 2.5 17.5C2.5 17.9142 2.83579 18.25 3.25 18.25H4.5V20.25C4.5 21.4926 5.50736 22.5 6.75 22.5H17.25C18.4926 22.5 19.5 21.4926 19.5 20.25V4.75C19.5 3.50736 18.4926 2.5 17.25 2.5H6.75ZM7.5 17.5C7.5 17.9142 7.16421 18.25 6.75 18.25C6.33579 18.25 6 17.9142 6 17.5C6 17.0858 6.33579 16.75 6.75 16.75C7.16421 16.75 7.5 17.0858 7.5 17.5ZM7.5 7.5C7.5 7.91421 7.16421 8.25 6.75 8.25C6.33579 8.25 6 7.91421 6 7.5C6 7.08579 6.33579 6.75 6.75 6.75C7.16421 6.75 7.5 7.08579 7.5 7.5ZM7.5 12.5C7.5 12.9142 7.16421 13.25 6.75 13.25C6.33579 13.25 6 12.9142 6 12.5C6 12.0858 6.33579 11.75 6.75 11.75C7.16421 11.75 7.5 12.0858 7.5 12.5Z" fill="#323544"></path>
+</svg>
+        </div>
+         <p class="text-2xl text-gray-800 mb-10 font-bold"><span id="plutinium">600
+        </span> <span id="plutiniumCurrency">هزار</span>تومان</p>
+        <ul class="mb-10 space-y-2">
+          <li class="flex justify-center items-center fill-green-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5" >
+  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+</svg>
+
+            <span class="ms-2">دسترسی به 4 دوره رد ماه</span></li>
+           <li class="flex justify-center items-center fill-green-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5" >
+  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+</svg>
+
+            <span class="ms-2">دسترسی به 4 دوره رد ماه</span></li>
+
+   <li class="flex justify-center items-center fill-green-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5" >
+  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+</svg>
+
+            <span class="ms-2">دسترسی به 4 دوره رد ماه</span></li>
+   <li class="flex justify-center items-center fill-green-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5" >
+  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+</svg>
+
+            <span class="ms-2">دسترسی به 4 دوره رد ماه</span></li>
+
+   <li class="flex justify-center items-center fill-red-500">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+</svg>
+
+
+            <span class="ms-2">دسترسی به 4 دوره رد ماه</span></li>
+
+
+
+
+
+        </ul>
+        <a href="#" class="bg-gray-200 w-2/4 text-white bg-red-600 transition-all duration-300 h-14 flex justify-center items-center text-xl rounded-lg">عضویت</a>
+       </div>
+        <div class="col-span-12 md:col-span-4  border-2 border-dashed rounded-xl border-gray-200  flex flex-col justify-center items-center hover:border-red-600 transition-all duration-300 p-8 group mx-5">
+      <div class="relative">    
+         <span class="bg-green-500 text-white w-10 h-10  justify items-center rounded-full hidden discountBadge ">20 %</span>
+     </div>
+        <div class="relative ">
+      
+          <span class=" absolute top-[50%] left-[50%] transform translate-x-[-50%]  translate-y-[-50%] z-30 group-hover:text-white font-semibold transition-all duration-200">تیتانیوم</span>
+   <svg width="74" height="79" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="fill-red-200 group-hover:fill-red-400" d="M6.75 2.5C5.50736 2.5 4.5 3.50736 4.5 4.75V6.75H3.25C2.83579 6.75 2.5 7.08579 2.5 7.5C2.5 7.91421 2.83579 8.25 3.25 8.25H4.5V11.75H3.25C2.83579 11.75 2.5 12.0858 2.5 12.5C2.5 12.9142 2.83579 13.25 3.25 13.25H4.5V16.75H3.25C2.83579 16.75 2.5 17.0858 2.5 17.5C2.5 17.9142 2.83579 18.25 3.25 18.25H4.5V20.25C4.5 21.4926 5.50736 22.5 6.75 22.5H17.25C18.4926 22.5 19.5 21.4926 19.5 20.25V4.75C19.5 3.50736 18.4926 2.5 17.25 2.5H6.75ZM7.5 17.5C7.5 17.9142 7.16421 18.25 6.75 18.25C6.33579 18.25 6 17.9142 6 17.5C6 17.0858 6.33579 16.75 6.75 16.75C7.16421 16.75 7.5 17.0858 7.5 17.5ZM7.5 7.5C7.5 7.91421 7.16421 8.25 6.75 8.25C6.33579 8.25 6 7.91421 6 7.5C6 7.08579 6.33579 6.75 6.75 6.75C7.16421 6.75 7.5 7.08579 7.5 7.5ZM7.5 12.5C7.5 12.9142 7.16421 13.25 6.75 13.25C6.33579 13.25 6 12.9142 6 12.5C6 12.0858 6.33579 11.75 6.75 11.75C7.16421 11.75 7.5 12.0858 7.5 12.5Z" fill="#323544"></path>
+</svg>
+
+
+        </div>
+  <p class="text-2xl text-gray-800 mb-10 font-bold"><span id="dimond">900
+        </span> <span id="dimondCurrency">هزار</span>تومان</p>
+        <p class="mb-10">طراحی UI/UX به شما کمک می‌کند رابط‌هایی زیبا و کاربرپسند ایجاد کنید و تجربه‌ای بهتر برای کاربران رقم بزنید.</p>
+        <a href="#" class="bg-gray-200 w-2/4 group-hover:text-white group-hover:bg-red-600 transition-all duration-300 h-14 flex justify-center items-center text-xl rounded-lg">عضویت</a>
+       </div>
+      </div>
+   </div>
+   <!-- prices -->
+    <!-- Contact -->
+<section  class="container mx-auto lg:px-20 xl:px-40 my-32">
+ <h4 class="font-semibold  my-10 text-2xl  text-gray-700 relative before:absolute before:content[''] before:w-10 before:h-1 before:bg-red-600 before:top-4 before:right-0 ps-12 after:absolute after:content[''] after:w-full overflow-hidden after:h-1 after:bg-red-600 after:top-4 after:right[260px]">با ما در ارتباط باشید</h4>
+
+<div class="grid grid-cols-2 gap-6 my-24">
+
+  <!-- فرم تماس -->
+  <div class="col-span-2 lg:col-span-1">
+    <form action="">
+      <div class="grid grid-cols-2 gap-6">
+
+        <input
+          class="col-span-2 lg:col-span-1 h-14 rounded-md border border-gray-300 px-4 focus:ring-0 focus:outline-none focus:border-gray-400"
+          type="text"
+          placeholder="نام و نام خانوادگی..."
+        >
+
+        <input
+          class="col-span-2 lg:col-span-1 h-14 rounded-md border border-gray-300 px-4 focus:ring-0 focus:outline-none focus:border-gray-400"
+          type="email"
+          placeholder="ایمیل..."
+        >
+
+        <textarea
+          class="col-span-2 border border-gray-300 rounded-md p-4 focus:ring-0 focus:outline-none focus:border-gray-400 text-gray-500"
+          rows="10"
+          placeholder="پیام شما..."
+        ></textarea>
+
+        <div class="col-span-2 mt-7 flex justify-end">
+          <button
+            type="submit"
+            class="bg-red-500 rounded-md w-1/4 text-xl h-14 text-white hover:bg-red-600 transition-all duration-300"
+          >
+            ارسال
+          </button>
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+  <!-- تصویر -->
+  <div class="col-span-2 lg:col-span-1 hidden lg:block">
+    <img
+      class="w-full h-full object-cover rounded-md"
+      src="../assets/img/36a88a2e15dae65aace4dadee6804e3e.jpg"
+      alt=""
+    >
+  </div>
+
+</div>
+</section>
+<!-- footer -->
+
+<footer class="relative mt-16 bg-gray-800 text-white">
+
+  <!-- موج بالای فوتر -->
+  <svg
+    class="absolute bottom-full left-0 w-full h-18"
+    viewBox="0 0 1440 64"
+    preserveAspectRatio="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <path
+      d="M0,32 C180,0 300,58 480,32 S780,0 960,32 S1260,62 1440,24 L1440,64 L0,64 Z"
+      fill="#1f2937"
+    />
+  </svg>
+
+  <div class="container bg-gray-800 mx-auto lg:px-20 xl:px-40 h-auto">
+   <div class="grid grid-cols-6 gap-6">
+<div class="col-span-6 md:col-span-3 xl:col-span-2 flex flex-col items-center md:items-start ">
+  <div class="relative font-semibold mb-6 before:absolute before:content[''] before:w-10 before:h-1 before:bg-red-600 before:top-3 before:right-[4px] ps-12">دسترسی سریع
+
+  </div>
+<ul class="text-gray-100 space-y-4">
+<li><a href="">خانه</a></li>
+<li><a href="">پروفایل کاربری</a></li>
+<li><a href="">تماس با ما</a></li>
+<li><a href="">درباره ما</a></li>
+</ul>
+</div>
+<div class="col-span-6 md:col-span-3 xl:col-span-2 flex flex-col items-center md:items-start "><div class="relative font-semibold mb-6 before:absolute before:content[''] before:w-10 before:h-1 before:bg-red-600 before:top-3 before:right-[4px] ps-12 ">دپارتمان های آموزشی</div>
+<ul class="text-gray-100 space-y-4">
+<li><a href="">طراحی وب</a></li>
+<li><a href="">Seo</a></li>
+<li><a href="">توسعه اپلیکیشن</a></li>
+<li><a href="">طراحی UI/UX</a></li>
+</ul>
+</div>
+<div class="col-span-6 md:col-span-3 xl:col-span-2 flex flex-col items-center md:items-start "><div class="relative font-semibold mb-6 before:absolute before:content[''] before:w-10 before:h-1 before:bg-red-600 before:top-3 before:right-[4px] ps-12">خبرنامه</div>
+<ul class="text-gray-100 space-y-4">
+<li><a href="">اطلاع از اخرین اموزش ها</a></li>
+<li><a href="">Seo</a></li>
+<li><a href="">توسعه بازی</a></li>
+<li><a href="">داده کاوی</a></li>
+</ul>
+</div>
+   </div>
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+ <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+<script src="../assets/js/main.js"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script> 
+    
+    
+  </body>
+</html>

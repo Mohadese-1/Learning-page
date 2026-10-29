@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+
+
+ /* @layer components{ 
+
+     n
+    .btn{
+      @apply text-red-500
+    }
+  }*/
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'); 
+@import "flowbite/src/themes/default";
+
+/* @layer components {
+
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1020px;
+    }
+  }
+} */
